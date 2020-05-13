@@ -1,0 +1,140 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* background-color: #f5f5f5; */
+}
+
+.bg-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('/img/city-shot.jpg') no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.aim-higher-bg{
+  position: absolute;
+  top: 0;
+  background: url('/img/aim-higher-manchester.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.85;
+}
+div{
+  position: relative;
+}
+.zoom-in{
+  transform: scale(1.1);
+  transition: transform 10s linear;
+}
+
+.form-hireme {
+  position: relative;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.7);
+}
+.form-hireme .checkbox {
+  position: relative;
+  font-weight: 400;
+  z-index: 10;
+}
+.form-hireme .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-hireme .form-control:focus {
+  z-index: 2;
+}
+.form-hireme .first {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-hireme .middle {
+  margin-bottom: -1px;
+  border-radius: 0;
+}
+.form-hireme .last {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-hireme button{
+  position: relative;
+  background: linear-gradient(180deg, #c2a2ff, #007bff);
+  z-index: 10;
+}
+.form-hireme button:hover{
+  opacity: 0.92;
+}
+
+i{
+  color: #77c0cf;
+}
+
+
+/* Cool Arrow Shape */
+.arrowShip{
+  margin: 0 auto 25px;
+  /* background: rgba(0,0,0, .1); */
+  /* background: hsl(180, 40%, 50%); */
+  background: linear-gradient(
+    45deg,
+    #c8a3ff,
+    #007bff
+  );
+  height: 100px;
+  width: 100px;
+  box-shadow: -3px 3px 7px rgba(0,0,0,0.1);
+  transform: rotate(-45deg);
+  transform: skewY(40);
+}
+.arrowShip::before{
+  content: "";
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
+.arrowShip::after {
+  content: "";
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+}
